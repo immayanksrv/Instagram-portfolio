@@ -1,0 +1,99 @@
+<html>
+    <head>
+     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="container">
+              <div class="screen">
+                <div class="profile-detail">
+                  <div class="profile-follow">
+                    <button class="profile-follow-btn">FOLLOW</button>
+                  </div>
+                  <div class="profile-picture">
+                    <img class="profile-picture-image" src="https://avatars.githubusercontent.com/u/44485919?s=400&u=6364b4e0f2585817815544673848205d70d20f4e&v=4" alt="Profile Picture">
+                  </div>
+                  <div class="profile-name">Mayank Srivastava</div>
+                  <div class="profile-location">
+                    <i class="fa fa-map-marker-alt"></i>&nbsp;&nbsp;United States
+                  </div>
+                  <div class="profile-description">I'm a GeoSpatial SME & Lead Front End Developer with a great love for amazing design and beautiful code.</div>
+                </div>
+                <div class="profile-stats">
+                  <div class="profile-stat profile-likes">
+                    <div class="profile-stat-value" id='counter1'>121k</div>
+                    <div class="profile-stat-desc">LIKES</div>
+                  </div>
+                  <div class="profile-stat profile-followers">
+                    <div class="profile-stat-value" id='counter2'>11k</div>
+                    <div class="profile-stat-desc">FOLLOWERS</div>
+                  </div>
+                  <div class="profile-stat profile-following">
+                    <div class="profile-stat-value" id='counter3'>988</div>
+                    <div class="profile-stat-desc">FOLLOWING</div>
+                  </div>
+                </div>
+                <div class="profile-albums">
+                  <div class="profile-albums-header">
+                    <div class="profile-albums-title">Skills</div>
+                    <div class="profile-albums-menu">
+                      <i class="fa fa-ellipsis-h"></i>
+                    </div>
+                  </div>
+                  <div class="profile-albums-body">
+                    <div class="profile-albums-list">
+                      <div class="profile-album">
+                        <div class="profile-album-image" id="album-1"></div>
+                        <div class="profile-album-title">GeoSpatial</div>
+                      </div>
+                      <div class="profile-album">
+                        <div class="profile-album-image" id="album-2"></div>
+                        <div class="profile-album-title">UI/UX</div>
+                      </div>
+                       <div class="profile-album">
+                        <div class="profile-album-image" id="album-3"></div>
+                        <div class="profile-album-title">Cloud</div>
+                      </div>
+                      <div class="profile-album">
+                        <div class="profile-album-image" id="album-4"></div>
+                        <div class="profile-album-title">Data Analytics</div>
+                      </div>
+                      <div class="profile-album">
+                        <div class="profile-album-image" id="album-5"></div>
+                        <div class="profile-album-title">IOT</div>
+                      </div>
+                      <div class="profile-album">
+                        <div class="profile-album-image" id="album-6"></div>
+                        <div class="profile-album-title">.Net</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="credits">
+                developed by
+                <a class="credits-link" target="_blank">
+                  
+                  @immayanksrv
+                </a>
+              </div>
+            </div>
+          </div>
+          
+    </body>
+
+    <script>
+        let counter1=1;
+        $(function() {
+            setInterval(function() {
+        counter1+=1;
+            $('#counter1').text(counter1);
+            $('#counter2').text(counter1*25);
+            $('#counter3').text(counter1*10);
+    }, 1000);
+});
+    </script>
+</html>
